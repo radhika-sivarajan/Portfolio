@@ -10,12 +10,12 @@ body {
 }
 
 #sidebar-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background: #222629;
     color: #fff;
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    justify-content: space-between;
     left: 0;
     overflow-y: auto;
     position: fixed;
@@ -25,11 +25,11 @@ body {
 }
 
 .sidebar-profile {
-    position: relative;
-    padding: 15px;
+    cursor: default;
     margin: 1.75em 1.5em 1.5em 1.5em;
     min-height: 48px;
-    cursor: default;
+    padding: 15px;
+    position: relative;
 }
 
 .sidebar-profile .pro-image,
@@ -47,10 +47,10 @@ body {
 }
 
 .sidebar-navigation ul {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 17pt;
     list-style-type: none;
     padding-left: 0;
-    font-size: 17pt;
-    font-family: 'Alegreya Sans', sans-serif;
 }
 
 .sidebar-navigation ul li a span {
@@ -58,12 +58,12 @@ body {
 }
 
 .sidebar-navigation ul li a {
-    display: block;
-    padding: 0.5em 1.5em 0.5em 1.5em;
-    color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
-    outline: 0;
     border: 0;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    outline: 0;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    text-decoration: none;
     transition: none;
 }
 
@@ -78,13 +78,13 @@ body {
 }
 
 .btn-social {
+    background-color: white;
+    border: solid 2px grey;
+    border-radius: 100%;
     display: inline-block;
     height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    border: solid 2px grey;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    width: 40px;
 }
 
 .social-stackoverflow {
@@ -97,12 +97,12 @@ body {
 }
 
 #main-container {
-    margin-left: 375px;
-    margin-top: -20px;
-    margin-bottom: -20px;
-    transition: all 0.5s ease;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
+    margin-bottom: -20px;
+    margin-left: 375px;
+    margin-top: -20px;
+    transition: all 0.5s ease;
 }
 
 .heading {
@@ -113,8 +113,8 @@ body {
 #intro {
     background-image: url('../images/banner.jpg');
     background-size: cover;
-    padding: 200px 80px;
     color: white;
+    padding: 200px 80px;
 }
 
 #intro h1,
@@ -124,16 +124,10 @@ body {
 }
 
 #tech-skills,
-#portfolio {
-    padding: 50px 60px;
-}
-
-#about {
-    padding: 50px 100px;
-}
-
+#portfolio,
+#about,
 #contact {
-    padding: 50px 150px;
+    padding: 4% 9% 6% 9%;
 }
 
 #tech-skills,
@@ -148,8 +142,8 @@ body {
 
 .tech span.label {
     font-size: 20px;
-    margin: 10px;
     line-height: 50px;
+    margin: 10px;
 }
 
 .contact-form {
@@ -158,8 +152,8 @@ body {
 
 footer {
     background-color: #6e5773;
-    padding: 30px;
     color: white;
+    padding: 30px;
 }
 
 @media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -172,14 +166,20 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
+    .tech span.label {
+        font-size: 15px;
+        line-height: 40px;
+        margin: 5px;
+    }
     #menu-toggle {
         display: block;
     }
     #sidebar-header {
-        width: 0px;
         transition: width 0.5s linear;
+        width: 0px;
     }
     #main-container {
+        font-size: 18px;
         margin-left: 0;
         transition: all 0.5s linear;
     }

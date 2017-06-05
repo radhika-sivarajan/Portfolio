@@ -76,23 +76,24 @@
         </div>
         <div id="portfolio">
             <h2 class="text-center heading">Portfolio</h2>
+            <hr>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 portfolio-item">
-                        <a href="#">
-                            <img class="img-responsive" src="http://placehold.it/700x400" alt="PikyFilm">
+                        <a data-toggle="modal" data-target="#pikyFilmModal">
+                            <img class="img-responsive" src="assets/images/PikyFilmLogo.jpg" alt="PikyFilm">
                         </a>
                         <h3>
-                            <a href="https://radhika-sivarajan.github.io/PikyFilm/">PikyFilm</a>
+                            <a target="_blank" href="https://radhika-sivarajan.github.io/PikyFilm/">PikyFilm</a>
                         </h3>
                         <p>Front-end web application with APIs allow you to upload a picture and returns back movie suggestions based on the estimated age of that picture.</p>
                     </div>
                     <div class="col-md-6 portfolio-item">
-                        <a href="http://remyslist.herokuapp.com/">
-                            <img class="img-responsive" src="http://placehold.it/700x400" alt="Remy's list">
+                        <a href="">
+                            <img class="img-responsive" src="assets/images/RemyListLogo.jpg" alt="Remy's list">
                         </a>
                         <h3>
-                            <a href="#">Remy's list</a>
+                            <a target="_blank" href="http://remyslist.herokuapp.com/">Remy's list</a>
                         </h3>
                         <p>Library of things for users San Diego to lend and borrow between themselves.</p>
                     </div>
@@ -101,6 +102,7 @@
         </div>
         <div id="tech-skills">
             <h2 class="text-center heading">Technical skills</h2>
+            <hr>
             <div class="tech">
                 <span class="label label-default">HTML5</span>
                 <span class="label label-primary">CSS3</span>
@@ -122,9 +124,11 @@
                 <span class="label label-danger">Firebase</span>
                 <span class="label label-warning">MongoDB</span>
             </div>
+            <hr>
         </div>
         <div id="about">
             <h2 class="text-center heading">About me</h2>
+            <hr>
             <p>Motivated Full stack web developer with experience in an Agile Software development environment. Well versed in coding, testing, maintenance support in NodeJS, PHP, MySQL, and development using CSS, HTML, JavaScript, jQuery, Object Oriented
                 Programing.
             </p>
@@ -155,8 +159,22 @@
             <p>Copyright &copy; 2017 Radhika Sivarajan</p>
         </footer>
     </div>
+    <div id="pikyFilmModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">PikyFilm</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="assets/images/PikyFilmHome.gif" alt="PikyFilm image">
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/javascript/javascript.js"></script>
 </body>
 
