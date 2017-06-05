@@ -15,26 +15,38 @@
     <div id="sidebar-header">
         <div class="sidebar-top">
             <div class="sidebar-profile">
-                <div class="text-center pro-image">
-                    <img class="img-circle" src="assets/images/ProPic.jpg" alt="Profile image">
-                </div>
+                <a href="index.html">
+                    <div class="text-center pro-image">
+                        <img class="img-circle" src="assets/images/ProPic.jpg" alt="Profile image">
+                    </div>
+                </a>
             </div>
             <div class="sidebar-navigation">
                 <ul class="navigation">
                     <li>
-                        <a href="#intro"><span class="glyphicon glyphicon-home"></span>Home</a>
+                        <a href="#intro" id="intro-link">
+                            <span class="glyphicon glyphicon-home"></span>Home
+                        </a>
                     </li>
                     <li>
-                        <a href="#portfolio"><span class="glyphicon  glyphicon-th"></span>Portfolio</a>
+                        <a href="#portfolio" id="portfolio-link">
+                            <span class="glyphicon  glyphicon-th"></span>Portfolio
+                        </a>
                     </li>
                     <li>
-                        <a href="#tech-skills" class="active"><span class="glyphicon glyphicon-wrench"></span>Technical skills</a>
+                        <a href="#tech-skills" id="tech-skills-link">
+                            <span class="glyphicon glyphicon-wrench"></span>Technical skills
+                        </a>
                     </li>
                     <li>
-                        <a href="#about"><span class="glyphicon  glyphicon-user"></span>About me</a>
+                        <a href="#about" id="about-link">
+                            <span class="glyphicon  glyphicon-user"></span>About me
+                        </a>
                     </li>
                     <li>
-                        <a href="#contact"><span class="glyphicon glyphicon-envelope"></span>Contact</a>
+                        <a href="#contact" id="contact-link">
+                            <span class="glyphicon glyphicon-envelope"></span>Contact
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -42,13 +54,13 @@
         <div class="text-center sidebar-bottom">
             <ul class="list-inline">
                 <li>
-                    <a href="#"><img class="btn-social" src="assets/images/Github.png"></a>
+                    <a target="_blank" href="https://github.com/radhika-sivarajan"><img class="btn-social social-github" src="assets/images/Github.png"></a>
                 </li>
                 <li>
-                    <a href="#"><img class="btn-social" src="assets/images/Stackoverflow.png"></a>
+                    <a target="_blank" href="http://stackoverflow.com/users/7359885/radhika"><img class="btn-social social-stackoverflow" src="assets/images/Stackoverflow-light.png"></a>
                 </li>
                 <li>
-                    <a href="#"><img class="btn-social" src="assets/images/Linkedin.png"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/radhika-sivarajan"><img class="btn-social social-linkedin" src="assets/images/Linkedin.png"></a>
                 </li>
             </ul>
         </div>
@@ -57,12 +69,11 @@
         <div id="intro" class=" text-center">
             <button class="btn btn-outline-secondary" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
             <h1 class="heading">Radhika Sivarajan</h1>
-            <p>Full stack web developer</p>
+            <p>Full stack web developer</p><br>
             <a href="#contact" class="btn btn-white btn-default active">
                 <span class="glyphicon glyphicon-envelope"></span> Email me
             </a>
         </div>
-
         <div id="portfolio">
             <h2 class="text-center heading">Portfolio</h2>
             <div class="container-fluid">
@@ -120,27 +131,30 @@
         </div>
         <div id="contact">
             <h2 class="text-center heading">Contact</h2>
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter name">
+            <div class="panel panel-default">
+                <div class="panel-body contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="user-name">Name</label>
+                            <input type="text" class="form-control" id="user-name" placeholder="Enter name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-email">Email address</label>
+                            <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-message">Message</label>
+                            <textarea class="form-control" id="user-message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-deafult">Send mail</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleTextarea">Message</label>
-                    <textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
         </div>
         <footer class="container-fluid text-center">
             <p>Copyright &copy; 2017 Radhika Sivarajan</p>
         </footer>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/javascript/javascript.js"></script>

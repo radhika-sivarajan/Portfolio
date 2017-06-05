@@ -73,6 +73,10 @@ body {
     color: #fff;
 }
 
+.sidebar-navigation ul li a.active span {
+    color: #e2b2ec;
+}
+
 .btn-social {
     display: inline-block;
     height: 40px;
@@ -80,6 +84,11 @@ body {
     border-radius: 100%;
     border: solid 2px grey;
     transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.social-stackoverflow {
+    padding: 1px;
 }
 
 .btn-social:hover,
@@ -103,14 +112,24 @@ body {
 
 #intro {
     background-image: url('../images/banner.jpg');
+    background-size: cover;
     padding: 200px 80px;
     color: white;
 }
 
+#intro h1,
+#intro p {
+    font-weight: 400;
+    text-shadow: 0 1px 1px #bbb, 0 2px 0 #999, 0 3px 0 #888, 0 9px 7px #504c4c;
+}
+
 #tech-skills,
-#portfolio,
-#about {
+#portfolio {
     padding: 50px 60px;
+}
+
+#about {
+    padding: 50px 100px;
 }
 
 #contact {
@@ -133,9 +152,14 @@ body {
     line-height: 50px;
 }
 
+.contact-form {
+    padding: 40px;
+}
+
 footer {
-    background-color: #7e5f65;
+    background-color: #6e5773;
     padding: 30px;
+    color: white;
 }
 
 @media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -153,11 +177,11 @@ footer {
     }
     #sidebar-header {
         width: 0px;
-        transition: all .0.5s ease;
+        transition: width 0.5s linear;
     }
     #main-container {
         margin-left: 0;
-        transition: all 0.5s ease;
+        transition: all 0.5s linear;
     }
     #sidebar-header.toggled {
         width: 250px;
