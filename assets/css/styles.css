@@ -140,6 +140,11 @@ body {
     background-color: #f0f1f1;
 }
 
+.portfolio-item img {
+    box-shadow: 0px 0px 10px 3px rgba(217, 213, 217, 1);
+    border: 1px solid #ccc;
+}
+
 .tech span.label {
     font-size: 20px;
     line-height: 50px;
