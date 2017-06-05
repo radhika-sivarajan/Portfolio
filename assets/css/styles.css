@@ -1,0 +1,168 @@
+body {
+    line-height: 2em;
+}
+
+#menu-toggle {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+#sidebar-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #222629;
+    color: #fff;
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 375px;
+}
+
+.sidebar-profile {
+    position: relative;
+    padding: 15px;
+    margin: 1.75em 1.5em 1.5em 1.5em;
+    min-height: 48px;
+    cursor: default;
+}
+
+.sidebar-profile .pro-image,
+.sidebar-profile .pro-name {
+    display: inline-block;
+}
+
+.pro-image img {
+    height: 100px;
+    width: 100px;
+}
+
+.pro-name {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sidebar-navigation ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 17pt;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.sidebar-navigation ul li a span {
+    float: left;
+}
+
+.sidebar-navigation ul li a {
+    display: block;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    transition: none;
+}
+
+.sidebar-navigation ul li a.active {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+    color: #fff;
+}
+
+.btn-social {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: solid 2px grey;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-social:hover,
+.btn-social:focus {
+    border: solid 3px white;
+}
+
+#main-container {
+    margin-left: 375px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    transition: all 0.5s ease;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.heading {
+    font-family: 'Heebo', sans-serif;
+    font-size: 40px;
+}
+
+#intro {
+    background-image: url('../images/banner.jpg');
+    padding: 200px 80px;
+    color: white;
+}
+
+#tech-skills,
+#portfolio,
+#about {
+    padding: 50px 60px;
+}
+
+#contact {
+    padding: 50px 150px;
+}
+
+#tech-skills,
+#contact {
+    background-color: #e0dfdc;
+}
+
+#portfolio,
+#about {
+    background-color: #f0f1f1;
+}
+
+.tech span.label {
+    font-size: 20px;
+    margin: 10px;
+    line-height: 50px;
+}
+
+footer {
+    background-color: #7e5f65;
+    padding: 30px;
+}
+
+@media screen and (min-width: 961px) and (max-width: 1880px) {
+    #sidebar-header {
+        width: 300px;
+    }
+    #main-container {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #menu-toggle {
+        display: block;
+    }
+    #sidebar-header {
+        width: 0px;
+        transition: all .0.5s ease;
+    }
+    #main-container {
+        margin-left: 0;
+        transition: all 0.5s ease;
+    }
+    #sidebar-header.toggled {
+        width: 250px;
+    }
+    #main-container.toggled {
+        margin-left: 250px;
+    }
+}

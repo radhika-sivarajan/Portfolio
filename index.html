@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Radhika Sivarajan</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100|Source+Sans+Pro:300|Heebo:300|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="sidebar-header">
+        <div class="sidebar-top">
+            <div class="sidebar-profile">
+                <div class="text-center pro-image">
+                    <img class="img-circle" src="assets/images/ProPic.jpg" alt="Profile image">
+                </div>
+            </div>
+            <div class="sidebar-navigation">
+                <ul class="navigation">
+                    <li>
+                        <a href="#intro"><span class="glyphicon glyphicon-home"></span>Home</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio"><span class="glyphicon  glyphicon-th"></span>Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#tech-skills" class="active"><span class="glyphicon glyphicon-wrench"></span>Technical skills</a>
+                    </li>
+                    <li>
+                        <a href="#about"><span class="glyphicon  glyphicon-user"></span>About me</a>
+                    </li>
+                    <li>
+                        <a href="#contact"><span class="glyphicon glyphicon-envelope"></span>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center sidebar-bottom">
+            <ul class="list-inline">
+                <li>
+                    <a href="#"><img class="btn-social" src="assets/images/Github.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img class="btn-social" src="assets/images/Stackoverflow.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img class="btn-social" src="assets/images/Linkedin.png"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main-container">
+        <div id="intro" class=" text-center">
+            <button class="btn btn-outline-secondary" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+            <h1 class="heading">Radhika Sivarajan</h1>
+            <p>Full stack web developer</p>
+            <a href="#contact" class="btn btn-white btn-default active">
+                <span class="glyphicon glyphicon-envelope"></span> Email me
+            </a>
+        </div>
+
+        <div id="portfolio">
+            <h2 class="text-center heading">Portfolio</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 portfolio-item">
+                        <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/700x400" alt="PikyFilm">
+                        </a>
+                        <h3>
+                            <a href="https://radhika-sivarajan.github.io/PikyFilm/">PikyFilm</a>
+                        </h3>
+                        <p>Front-end web application with APIs allow you to upload a picture and returns back movie suggestions based on the estimated age of that picture.</p>
+                    </div>
+                    <div class="col-md-6 portfolio-item">
+                        <a href="http://remyslist.herokuapp.com/">
+                            <img class="img-responsive" src="http://placehold.it/700x400" alt="Remy's list">
+                        </a>
+                        <h3>
+                            <a href="#">Remy's list</a>
+                        </h3>
+                        <p>Library of things for users San Diego to lend and borrow between themselves.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tech-skills">
+            <h2 class="text-center heading">Technical skills</h2>
+            <div class="tech">
+                <span class="label label-default">HTML5</span>
+                <span class="label label-primary">CSS3</span>
+                <span class="label label-success">NodeJS</span>
+                <span class="label label-info">PHP</span>
+                <span class="label label-warning">MVC</span>
+                <span class="label label-danger">LAMP</span>
+                <span class="label label-success">JavaScript</span>
+                <span class="label label-default">React</span>
+                <span class="label label-danger">MERN</span>
+                <span class="label label-success">jQuery</span>
+                <span class="label label-default">Bootstrap</span>
+                <span class="label label-primary">Responsive web design</span>
+                <span class="label label-info">JSON</span>
+                <span class="label label-warning">Heroku</span>
+                <span class="label label-danger">Git</span>
+                <span class="label label-success">SVN</span>
+                <span class="label label-default">MySQL</span>
+                <span class="label label-danger">Firebase</span>
+                <span class="label label-warning">MongoDB</span>
+            </div>
+        </div>
+        <div id="about">
+            <h2 class="text-center heading">About me</h2>
+            <p>Motivated Full stack web developer with experience in an Agile Software development environment. Well versed in coding, testing, maintenance support in NodeJS, PHP, MySQL, and development using CSS, HTML, JavaScript, jQuery, Object Oriented
+                Programing.
+            </p>
+        </div>
+        <div id="contact">
+            <h2 class="text-center heading">Contact</h2>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Name</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea">Message</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="6"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <footer class="container-fluid text-center">
+            <p>Copyright &copy; 2017 Radhika Sivarajan</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+</body>
+
+</html>
