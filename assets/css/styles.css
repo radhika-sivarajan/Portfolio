@@ -120,7 +120,7 @@ body {
     background-image: url('../images/banner.jpg');
     background-size: cover;
     color: white;
-    padding: 200px 80px;
+    padding: 18% 2%;
 }
 
 #intro h1 {
@@ -218,5 +218,30 @@ footer {
     }
     #main-container.toggled {
         margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar-navigation ul {
+        font-size: 13px;
+    }
+    #main-container {
+        font-size: 13px;
+    }
+    #intro h1 {
+        font-size: 30px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .btn-social {
+        height: 25px;
+        width: 25px;
+    }
+    #sidebar-header.toggled {
+        width: 150px;
+    }
+    #main-container.toggled {
+        margin-left: 150px;
     }
 }
