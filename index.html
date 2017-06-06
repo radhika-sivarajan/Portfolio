@@ -135,60 +135,65 @@
         </div>
         <div id="contact">
             <h2 class="text-center heading">Contact</h2>
+            <div class="text-center message-bar">
+                <p id="thankyou_message"><span class="label label-success">Thank you for contacting! I will get back to you shortly!</span></p>
+            </div>
             <div class="panel panel-default">
                 <div class="panel-body contact-form">
-                    <form role="form" method="POST" name="contactform" action="contact_form.php">
+                    <form id="gform" method="POST" name="contactform" action="https://script.google.com/macros/s/AKfycbxf6Wt1VQ73TmTA_2Q5aCZTZM0WlilVytTjLIG6oTeq-STmpL8/exec">
                         <div class="form-group">
                             <label for="user-name">Name</label>
-                            <input type="text" class="form-control" id="user-name" placeholder="Enter name" required>
+                            <input name="name" type="text" class="form-control" id="user-name" placeholder="Enter name" required>
                         </div>
                         <div class="form-group">
                             <label for="user-email">Email address</label>
-                            <input type="email" class="form-control" id="user-email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <input name="email" type="email" class="form-control" id="user-email" aria-describedby="emailHelp" placeholder="Enter email" required>
                         </div>
                         <div class="form-group">
                             <label for="user-message">Message</label>
-                            <textarea class="form-control" id="user-message" rows="6" required></textarea>
+                            <textarea name="userMessage" class=" form-control " id="user-message " rows="6 " required></textarea>
                         </div>
-                        <button id="submit" name="submit" type="submit" class="btn btn-deafult">Send mail</button>
+                        <button id="submit" type="submit" class="btn btn-deafult ">Send mail</button>
                     </form>
                 </div>
             </div>
         </div>
-        <footer class="container-fluid text-center">
+        <footer class="container-fluid text-center ">
             <p>Copyright &copy; 2017 Radhika Sivarajan</p>
         </footer>
     </div>
-    <div id="pikyFilmModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">PikyFilm</h4>
+    <div id="pikyFilmModal " class="modal fade " role="dialog ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <button type="button " class="close " data-dismiss="modal ">&times;</button>
+                    <h4 class="modal-title ">PikyFilm</h4>
                 </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="assets/images/PikyFilmHome.gif" alt="PikyFilm image">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="remyListModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Remy's List</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="assets/images/RemyListHome.gif" alt="RemyList image">
+                <div class="modal-body ">
+                    <img class="img-responsive " src="assets/images/PikyFilmHome.gif " alt="PikyFilm image ">
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+    <div id="remyListModal " class="modal fade " role="dialog ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <button type="button " class="close " data-dismiss="modal ">&times;</button>
+                    <h4 class="modal-title ">Remy's List</h4>
+                </div>
+                <div class="modal-body ">
+                    <img class="img-responsive " src="assets/images/RemyListHome.gif " alt="RemyList image ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="assets/javascript/javascript.js "></script>
+    <script data-cfasync="false" type="text/javascript" src="assets/javascript/form-submission-handler.js"></script>
+    <!-- HTML form to send Email without a Backend  Server using https://github.com/dwyl/html-form-send-email-via-google-script-without-server -->
 </body>
 
 </html>
