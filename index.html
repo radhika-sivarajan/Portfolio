@@ -137,7 +137,7 @@
             <h2 class="text-center heading">Contact</h2>
             <div class="panel panel-default">
                 <div class="panel-body contact-form">
-                    <form method="POST" name="contactform" action="contact_form.php">
+                    <form role="form" method="POST" name="contactform" action="contact_form.php">
                         <div class="form-group">
                             <label for="user-name">Name</label>
                             <input type="text" class="form-control" id="user-name" placeholder="Enter name" required>
@@ -150,7 +150,7 @@
                             <label for="user-message">Message</label>
                             <textarea class="form-control" id="user-message" rows="6" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-deafult">Send mail</button>
+                        <button id="submit" name="submit" type="submit" class="btn btn-deafult">Send mail</button>
                     </form>
                 </div>
             </div>

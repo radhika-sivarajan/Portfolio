@@ -117,10 +117,14 @@ body {
     padding: 200px 80px;
 }
 
+#intro h1 {
+    font-size: 50px;
+}
+
 #intro h1,
 #intro p {
-    font-weight: 400;
-    text-shadow: 0 1px 1px #bbb, 0 2px 0 #999, 0 3px 0 #888, 0 9px 7px #504c4c;
+    font-weight: 800;
+    text-shadow: 2px 1px 2px #0A0000;
 }
 
 #tech-skills,
