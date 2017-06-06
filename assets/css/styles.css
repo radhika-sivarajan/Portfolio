@@ -7,6 +7,12 @@ body {
     position: fixed;
     right: 10px;
     top: 10px;
+    background-color: #8e6b96;
+    border: 1px solid #6e5773;
+}
+
+#menu-toggle:hover {
+    color: #222629;
 }
 
 #sidebar-header {
