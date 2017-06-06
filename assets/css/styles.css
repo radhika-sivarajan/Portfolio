@@ -197,6 +197,10 @@ footer {
         line-height: 40px;
         margin: 5px;
     }
+    .pro-image img {
+        height: 60px;
+        width: 60px;
+    }
     #menu-toggle {
         display: block;
     }
