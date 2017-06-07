@@ -3,6 +3,7 @@ $(document).ready(function () {
         e.preventDefault();
         $("#sidebar-header").toggleClass("toggled");
         $("#main-container").toggleClass("toggled");
+        $("#footer-social").toggleClass("toggled");
     });
 
     $(document).on("scroll", onScroll);
@@ -41,4 +42,7 @@ $(document).ready(function () {
             }
         });
     }
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 });

@@ -3,12 +3,16 @@ body {
 }
 
 #menu-toggle {
-    display: none;
     position: fixed;
     right: 10px;
     top: 10px;
     background-color: #8e6b96;
     border: 1px solid #6e5773;
+}
+
+#footer-social,
+#menu-toggle {
+    display: none;
 }
 
 #menu-toggle:hover {
@@ -173,13 +177,13 @@ body {
 }
 
 .contact-form {
-    padding: 40px;
+    padding: 6%;
 }
 
 footer {
     background-color: #6e5773;
     color: white;
-    padding: 30px;
+    padding: 4%;
 }
 
 @media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -201,7 +205,8 @@ footer {
         height: 60px;
         width: 60px;
     }
-    #menu-toggle {
+    #menu-toggle,
+    #footer-social {
         display: block;
     }
     #sidebar-header {
@@ -219,6 +224,9 @@ footer {
     #main-container.toggled {
         margin-left: 250px;
     }
+    #footer-social.toggled {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -228,9 +236,7 @@ footer {
     #main-container {
         font-size: 13px;
     }
-    #intro h1 {
-        font-size: 30px;
-    }
+    #intro h1,
     .heading {
         font-size: 30px;
     }
