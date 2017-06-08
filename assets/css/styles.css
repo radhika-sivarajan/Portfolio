@@ -234,9 +234,12 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    .sidebar-navigation ul {
-        font-size: 13px;
+    .tech span.label {
+        line-height: 30px;
+        margin: 3px;
     }
+    .tech span.label,
+    .sidebar-navigation ul,
     #main-container {
         font-size: 13px;
     }
