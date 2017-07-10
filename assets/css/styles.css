@@ -2,6 +2,23 @@ body {
     line-height: 2em;
 }
 
+.modal-header {
+    border-bottom: 1px solid #eee;
+    background-color: #f1dbf7;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-header h4 {
+    font-family: 'Happy Monkey', cursive;
+    font-weight: 900;
+    color: black;
+}
+
 #menu-toggle {
     position: fixed;
     right: 10px;
