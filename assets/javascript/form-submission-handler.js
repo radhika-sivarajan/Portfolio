@@ -1,3 +1,4 @@
+// SOURCE: https://github.com/dwyl/html-form-send-email-via-google-script-without-server
 
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
