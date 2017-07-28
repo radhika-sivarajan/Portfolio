@@ -6,6 +6,15 @@ $(document).ready(function () {
         $("#footer-social").toggleClass("toggled");
     });
 
+    $(".expand").click(function () {
+        $(".expand").text("More...");
+        $(".expand").toggleClass("shrink");
+    });
+
+    $(document).on("click", ".shrink", function () {
+        $(".shrink").text("Less...");
+    });
+
     $(document).on("scroll", onScroll);
 
     $('a[href^="#"]').on('click', function (e) {
