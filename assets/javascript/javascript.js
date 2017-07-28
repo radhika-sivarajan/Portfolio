@@ -7,12 +7,12 @@ $(document).ready(function () {
     });
 
     $(".expand").click(function () {
-        $(".expand").text("More...");
-        $(".expand").toggleClass("shrink");
+        $(this).text("More...");
+        $(this).toggleClass("shrink");
     });
 
     $(document).on("click", ".shrink", function () {
-        $(".shrink").text("Less...");
+        $(this).text("Less...");
     });
 
     $(document).on("scroll", onScroll);
