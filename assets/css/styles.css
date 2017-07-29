@@ -171,6 +171,12 @@ body {
     background-color: #f0f1f1;
 }
 
+#pikyFilmMore,
+#remyListMore,
+#givingGoodsMore{
+    font-size: 90%;
+}
+
 #myResume {
     padding-bottom: 5px;
 }
