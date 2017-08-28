@@ -175,6 +175,7 @@ body {
 #remyListMore,
 #givingGoodsMore{
     font-size: 90%;
+    text-align: justify;
 }
 
 #myResume {
