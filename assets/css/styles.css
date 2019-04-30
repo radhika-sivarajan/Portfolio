@@ -27,8 +27,7 @@ body {
     border: 1px solid #6e5773;
 }
 
-#footer-social,
-#menu-toggle {
+#footer-social, #menu-toggle {
     display: none;
 }
 
@@ -59,8 +58,7 @@ body {
     position: relative;
 }
 
-.sidebar-profile .pro-image,
-.sidebar-profile .pro-name {
+.sidebar-profile .pro-image, .sidebar-profile .pro-name {
     display: inline-block;
 }
 
@@ -118,8 +116,7 @@ body {
     padding: 1px;
 }
 
-.btn-social:hover,
-.btn-social:focus {
+.btn-social:hover, .btn-social:focus {
     border: solid 2px white;
 }
 
@@ -137,6 +134,12 @@ body {
     font-size: 40px;
 }
 
+.designation {
+    font-family: 'Days One', sans-serif;
+    color: #c875f2;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+}
+
 #intro {
     background-image: url('../images/banner.jpg');
     background-size: cover;
@@ -148,32 +151,24 @@ body {
     font-size: 50px;
 }
 
-#intro h1,
-#intro p {
+#intro h1, #intro p {
     font-weight: 800;
     text-shadow: 2px 1px 2px #0A0000;
 }
 
-#tech-skills,
-#portfolio,
-#about,
-#contact {
+#tech-skills, #portfolio, #about, #contact {
     padding: 4% 9% 6% 9%;
 }
 
-#tech-skills,
-#contact {
+#tech-skills, #contact {
     background-color: #e0dfdc;
 }
 
-#portfolio,
-#about {
+#portfolio, #about {
     background-color: #f0f1f1;
 }
 
-#pikyFilmMore,
-#remyListMore,
-#givingGoodsMore{
+#pikyFilmMore, #remyListMore, #givingGoodsMore {
     font-size: 90%;
     text-align: justify;
 }
@@ -196,7 +191,7 @@ body {
 .portfolio-item img {
     box-shadow: 0px 0px 10px 3px rgba(217, 213, 217, 1);
     border: 1px solid #ccc;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .tech span.label {
@@ -207,6 +202,11 @@ body {
 
 .contact-form {
     padding: 6%;
+}
+
+.btn-send{
+    background-color:#6c1480;
+    color: #fff;
 }
 
 footer {
@@ -234,8 +234,7 @@ footer {
         height: 60px;
         width: 60px;
     }
-    #menu-toggle,
-    #footer-social {
+    #menu-toggle, #footer-social {
         display: block;
     }
     #sidebar-header {
@@ -263,13 +262,10 @@ footer {
         line-height: 30px;
         margin: 3px;
     }
-    .tech span.label,
-    .sidebar-navigation ul,
-    #main-container {
+    .tech span.label, .sidebar-navigation ul, #main-container {
         font-size: 13px;
     }
-    #intro h1,
-    .heading {
+    #intro h1, .heading {
         font-size: 30px;
     }
     .btn-social {
